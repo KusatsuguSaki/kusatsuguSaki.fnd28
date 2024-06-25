@@ -14,3 +14,18 @@ function checkingAnswers() {
 
 const target = document.getElementById("target");
 target.addEventListener("click", checkingAnswers);
+
+
+const answerbox2 = document.getElementById("answerbox2");
+
+function checkingAnswers2() {
+  let answers = document.getElementsByName("temple");
+  if (answers[3].checked === true) {
+    answerbox2.innerText = "🙆‍♀️正解です🙆‍♀️";
+  } else {
+    answerbox2.innerText = "🙅‍♀️ざんねん！不正解です🙅‍♀️";
+  }
+}
+
+const target2 = document.getElementById("target2");
+target2.addEventListener("click", checkingAnswers2);
